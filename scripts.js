@@ -22,7 +22,7 @@ function searchBook() {
 
       document.querySelector(".title").innerHTML = details.title;
 
-      if (details.hasOwnProperty("searchInfo")) {
+      if (data.items[0].hasOwnProperty("searchInfo")) {
         document.querySelector(".description").innerHTML =
           data.items[0].searchInfo.textSnippet;
       }
